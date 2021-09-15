@@ -33,13 +33,13 @@ public class Calculadora {
             }
         }
 
-        @GetMapping("api/v1/calcular/multply")
+        @GetMapping("api/v1/calcular/multiply")
         public Number multiply(double a, double b) {
-            double multiplicy = a * b;
-            if ((multiplicy == Math.floor(multiplicy)) &&!Double.isInfinite(multiplicy)) {
-                return (int) multiplicy;
+            double multiply = a * b;
+            if ((multiply == Math.floor(multiply)) &&!Double.isInfinite(multiply)) {
+                return (int) multiply;
             } else {
-                return multiplicy;
+                return multiply;
             }
         }
 
